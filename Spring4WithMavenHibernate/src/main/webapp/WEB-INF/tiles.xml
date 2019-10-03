@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+        
+<tiles-definitions>
+
+<!-- Mapping for Base Template Layout Page -->
+
+<definition name="baseTemplate" id="baseTemplate" template="/WEB-INF/Layout/baseLayout.jsp">
+<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+<put-attribute name="body" value="${body}" />
+<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+</definition>
+
+<!-- Mapping for Registration Page -->
+<definition name="registration" id="registration" extends="baseTemplate">
+<put-attribute name="body" value="/WEB-INF/views/registration.jsp" />
+</definition>
+
+</tiles-definitions>
